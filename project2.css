@@ -1,0 +1,43 @@
+tr.colorr {
+  background:white;
+}
+table{
+  background: #800080;
+}
+#name{
+  color: black;
+}
+
+header{
+  background-color:#ffc0cb;
+  padding:10px;
+
+
+}
+body{
+  background-image: url(https://new-science.ru/wp-content/uploads/2021/01/21455.png);
+}
+
+
+#myimg{
+  float:left;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+div.divg{
+  max-width:800px;
+  background-color:#ffc0cb;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+footer{
+  color: black;
+
+  background-color:#ffc0cb;
+  margin:50px;
+  padding:10px;
+  max-width: 5300px;
+
+}
