@@ -1,0 +1,109 @@
+.page{
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+}
+nav{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+#menu a{
+  margin-right: 50px;
+}
+tr.colorr {
+  background:white;
+}
+table{
+  background: #800080;
+}
+#name{
+  color: black;
+}
+
+header{
+  background-color:#ffc0cb;
+  padding:10px;
+
+
+}
+body{
+  background-image: url(https://new-science.ru/wp-content/uploads/2021/01/21455.png);
+}
+
+
+#myimg{
+  float:left;
+  margin:10px;
+  width:100px;
+  height:100px;
+}
+div.divg{
+  width:100%;
+  background-color:#ffc0cb;
+  margin: 0 auto;
+  margin-top:20px;
+  padding:10px;
+}
+footer{
+  color: black;
+
+  background-color:#ffc0cb;
+  margin:50px;
+  padding:10px;
+  max-width: 5300px;
+
+}
+.page :nth-child(1){
+  order: 1;
+}
+.page :nth-child(3){
+  order: 2;
+}
+
+.page :nth-child(2){
+  order: 3;
+}
+.page :nth-child(4){
+  order: 4;
+}
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  .header {
+    flex-direction: row;
+  }
+div.divg{
+	width: 800px;
+}
+  nav {
+    flex-direction: row;
+    max-width: 600px;
+    text-align: center;
+  }
+  nav div{
+    margin: 0 auto;
+  }
+  #menu a{
+    margin-right: 50px;
+  }
+.page{
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+}
+  .page :nth-child(2){
+    order: 2;
+  }
+
+  .page :nth-child(3){
+    order: 3;
+  }
+
+  .form{
+    width: 540px;
+  }
+
+}
