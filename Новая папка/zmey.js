@@ -15,7 +15,6 @@ let food={
     x:Math.floor((Math.random()*17+1))*box,
     y:Math.floor((Math.random()*15+3))*box,
 };
-
 var fly = new Audio();
 
 fly.src = "kuban.mp3";
