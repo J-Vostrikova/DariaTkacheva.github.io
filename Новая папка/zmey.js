@@ -16,6 +16,11 @@ let food={
     y:Math.floor((Math.random()*15+3))*box,
 };
 
+var fly = new Audio();
+
+fly.src = "kuban.mp3";
+fly.play();
+
 let snake =[];
 snake[0]={
 x: 9*box,
@@ -28,13 +33,20 @@ let dir;
 
 function direction(event){
     if(event.keyCode==37 && dir !="right")
-    dir="left";
+   { dir="left";
+   fly.play();
+}
     else if(event.keyCode==38&& dir !="down")
-    dir="up";
+    {dir="up";
+    fly.play();
+}
     else if(event.keyCode==39&& dir !="left")
-    dir="right";
+    {dir="right";
+    fly.play();
+}
     else if(event.keyCode==40&& dir !="up")
-    dir="down";
+   { dir="down";
+   fly.play();}
 }
 
 function eatTail(head, arr){
