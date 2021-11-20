@@ -17,7 +17,7 @@ let food={
 };
 var fly = new Audio();
 
-fly.src = "/Новая папка/kuban.mp3";
+fly.src = "kuban.mp3";
 fly.play();
 
 let snake =[];
