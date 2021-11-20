@@ -2,10 +2,10 @@ const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
 
 const ground =new Image();
-ground.src="pole.png";
+ground.src="pole3.png";
 
 const foodImg =new Image();
-foodImg.src="food.png";
+foodImg.src="usa.png";
 
 let box=32;
 
@@ -17,7 +17,7 @@ let food={
 };
 var fly = new Audio();
 
-fly.src = "kuban.mp3";
+fly.src = "fabrika.mp3";
 fly.play();
 
 let snake =[];
@@ -61,10 +61,10 @@ function drawGame()
     ctx.drawImage(foodImg,food.x,food.y);
 
     for(let i=0;i<snake.length;i++){
-        ctx.fillStyle=i==0?"green":"red";
+        ctx.fillStyle=i==0?"black":"gray";
         ctx.fillRect(snake[i].x,snake[i].y,box,box);
     }
-    ctx.fillStyle="white";
+    ctx.fillStyle="black";
     ctx.font="50px Arial";
     ctx.fillText(score, box*2.5,box*1.7);
     let snakeX=snake[0].x;
