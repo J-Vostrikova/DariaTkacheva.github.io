@@ -51,7 +51,10 @@ function direction(event){
 function eatTail(head, arr){
     for(let i=0;i<arr.length;i++){
         if(head.x==arr[i].x&&head.y==arr[i].y)
-        clearInterval(game);
+        {
+            clearInterval(game);
+            fly.pause();
+        }
     }
 }
 function drawGame()
@@ -81,7 +84,10 @@ function drawGame()
 }
 
 if(snakeX<box || snakeX>box*17 || snakeY<3*box|| snakeY>box*17)
+{
     clearInterval(game);
+    fly.pause();
+}
 
   
 
