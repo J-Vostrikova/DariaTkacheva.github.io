@@ -18,7 +18,7 @@ let food={
 var fly = new Audio();
 
 fly.src = "fabrika.mp3";
-fly.play();
+
 
 let snake =[];
 snake[0]={
