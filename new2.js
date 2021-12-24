@@ -15,15 +15,15 @@ btn.onclick = function()
   const r1 = /\D+/;
   const r2 = /^$/;
   var pro = parseInt(cena.value) *parseInt(kol.value);
-    if((r.test(cena.value) ||r.test(kol.value))===true ) {
+    if((r.test(cena.value) ||r.test(kol.value))==true ) {
       alert("Ошибка: Число меньше либо равно нулю")
 
 }
- else if((r1.test(cena.value) ||r1.test(kol.value))===true ) {
+ else if((r1.test(cena.value) ||r1.test(kol.value))==true ) {
   alert(" Ошибка: Вы ввели букву, а не число!")
 
 }
-else if((r2.test(cena.value) ||r2.test(kol.value))===true ) {
+else if((r2.test(cena.value) ||r2.test(kol.value))==true ) {
   alert(" Ошибка: Введите цифру в соответствующее поле!")
 
 }
